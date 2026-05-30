@@ -1,0 +1,2 @@
+ALTER TABLE conversation_members
+CHANGE COLUMN joined_at created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
