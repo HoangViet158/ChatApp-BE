@@ -39,3 +39,4 @@ out/
 docker-compose-info.txt
 docker-compose.prod.yml
 application-dev.yml
+Docker-Key.pem
