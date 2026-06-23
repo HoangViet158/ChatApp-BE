@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: ${SPRING_PROFILES_ACTIVE:dev}
+    active: prod
   config:
     import: optional:file:.env[.properties]
   application:
