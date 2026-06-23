@@ -3,46 +3,46 @@ spring:
     active: ${SPRING_PROFILES_ACTIVE:dev}
   config:
     import: optional:file:.env[.properties]
-  application:
-    name: ${SPRING_APPLICATION_NAME}
+#   application:
+#     name: ${SPRING_APPLICATION_NAME}
 
-  ai:
-    openai:
-      api-key: ${OPENAI_API_KEY}
+#   ai:
+#     openai:
+#       api-key: ${OPENAI_API_KEY}
 
-  datasource:
-    url: ${DB_URL}
-    username: ${DB_USERNAME}
-    password: ${DB_PASSWORD}
-    driver-class-name: ${DB_DRIVER}
+#   datasource:
+#     url: ${DB_URL}
+#     username: ${DB_USERNAME}
+#     password: ${DB_PASSWORD}
+#     driver-class-name: ${DB_DRIVER}
 
-  jpa:
-    hibernate:
-      ddl-auto: validate
+#   jpa:
+#     hibernate:
+#       ddl-auto: validate
 
-    show-sql: true
+#     show-sql: true
 
-    properties:
-      hibernate:
-        format_sql: true
+#     properties:
+#       hibernate:
+#         format_sql: true
 
-  flyway:
-    enabled: true
-    locations: classpath:db/migration
-    url: ${FLYWAY_URL}
-    user: ${FLYWAY_USER}
-    password: ${FLYWAY_PASSWORD}
-    driver-class-name: ${FLYWAY_DRIVER}
+#   flyway:
+#     enabled: true
+#     locations: classpath:db/migration
+#     url: ${FLYWAY_URL}
+#     user: ${FLYWAY_USER}
+#     password: ${FLYWAY_PASSWORD}
+#     driver-class-name: ${FLYWAY_DRIVER}
 
-  data:
-    redis:
-      host: ${REDIS_HOST}
-      port: ${REDIS_PORT}
+#   data:
+#     redis:
+#       host: ${REDIS_HOST}
+#       port: ${REDIS_PORT}
 
-jwt:
-  secret-key: ${JWT_SECRET_KEY}
+# jwt:
+#   secret-key: ${JWT_SECRET_KEY}
 
-cloudinary:
-  cloud-name: ${CLOUDINARY_CLOUD_NAME}
-  api-key: ${CLOUDINARY_API_KEY}
-  api-secret: ${CLOUDINARY_API_SECRET}
+# cloudinary:
+#   cloud-name: ${CLOUDINARY_CLOUD_NAME}
+#   api-key: ${CLOUDINARY_API_KEY}
+#   api-secret: ${CLOUDINARY_API_SECRET}
